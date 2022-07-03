@@ -1,0 +1,1 @@
+2 burger chicken small, 3 burger egg large, 1 extras fries small, 1 extras shakes large
