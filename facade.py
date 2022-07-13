@@ -20,5 +20,9 @@ class make_coffee:
         res=self.a.method()+self.b.method()+self.c.method()
         print(res)
         print("coffee made!!!")
-coffee_maker=make_coffee()
-coffee_maker.create()
+
+print("Press 1 to make coffee")
+n=input()    
+if n=="1":
+    coffee_maker=make_coffee()
+    coffee_maker.create()

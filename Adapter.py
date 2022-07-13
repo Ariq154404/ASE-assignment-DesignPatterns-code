@@ -24,12 +24,16 @@ class Adapter(interfaceA):
         sample=sample.split()
         sample= self.B.send_list(sample)
         return sample
-def client(adapter):
+def client(adapter,st):
     print("Client sends string but dosent have to worry about the format")
-    val=adapter.send_string("1 2 3")
+    val=adapter.send_string(st)
     return val
+
+    
 ada=Adapter()
-server=client(ada)
-print("server receivers",server)
+print("insert string for client:")
+st=input()
+server=client(ada,st)
+print("server receives",server)
 
 
